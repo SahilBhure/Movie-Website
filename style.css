@@ -15,6 +15,9 @@ header{
     display: flex;
     justify-content: flex-end;
     background-color: var(--secondary-color);
+    border: 4px solid black;
+    margin: 10px;
+    border-radius: 30px;
 }
 #textbar{
     background-color: transparent;
@@ -23,6 +26,8 @@ header{
     font-size: 1rem;
     padding: 0.5rem 1rem;
     color: white;
+    width: 20vw;
+    margin-right: 20px;
 }
 #textbar::placeholder{
     color: #7378c5;
@@ -35,74 +40,34 @@ header{
     background-color: var(--secondary-color);
     border-radius: 50px;
     border: 2px solid var(--primary-color);
-    height: 30px;
+    height: 40px;
     outline: none;
+    width: 5vw;
 }
 #searchmovie:focus{
     background: #fff;
 }
-
-main{
+.movie-card{
     display: flex;
+    gap: 50px;
     flex-wrap: wrap;
-}
-
-.movie{  
-    width: 300px;
-    margin: 1rem;
-    background-color: var(--secondary-color);
-    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
-    position: relative;
-    overflow: hidden;
-    border-radius: 2px;
-}
-
-.movie img{
-    width: 100%;
-}
-
-.movie-info{
-    color: white;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 0.5rem 1rem 1rem;
-    letter-spacing: 0.5px;
+    align-items: center;
 }
-
-.movie-info h3{
-    margin-top: 0;
+.card-body-repo{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 10px solid black;
+    box-shadow: 0px 0px 10px 2px  var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    background: #000;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-.movie-info span{
-    background-color: var(--primary-color);
-    padding: .25rem 0.5rem;
-    border-radius: 3px;
-    font-weight: bold;
-}
-
-.movie-info span.green{
-    color: lightgreen;
-}
-.movie-info span.green{
-    color: orange;
-}
-.movie-info span.green{
-    color: red;
-}
-
-.overview{
-    background-color: white;
-    padding: 2rem;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    max-height: 100%;
-    transform: translateY(101%);
-    transition: transform 0.3s ease-in;
-}
-
-.movie:hover .overview{
-    transform:  translateY(0);
+#Imgpic{
+    width: 30vw;
+    height: 60vh;
 }
